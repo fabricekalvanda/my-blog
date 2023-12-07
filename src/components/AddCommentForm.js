@@ -28,6 +28,7 @@ const AddCommentForm = ({ articleName, onArticleUpdated }) => {
             {user && <p>You are posting as {user.email}</p>}
             <textarea
                 value={commentText}
+                placeholder="Leave a comment.."
                 onChange={e => setCommentText(e.target.value)}
                 rows="4" 
                 cols="50" />
